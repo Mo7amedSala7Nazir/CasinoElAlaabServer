@@ -4,9 +4,9 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res)=>{
-    console.log("a7a")
+    console.log("a7a");
     res.status(200);
-    res.send("Welcome to root URL of Server");
+    res.send(`Request received at ${Date.now()}`);
 });
 
 app.listen(PORT, (error) =>{
